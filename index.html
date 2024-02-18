@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.webp" type="image/x-icon">
+    <title>Ong Arca da Fé</title>
+
+    <!--link para bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+    crossorigin="anonymous">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="imgcarrocel.css">
+    <link rel="stylesheet" href="estilização.css">
+  </head>
+<body data-bs-theme="light">
+
+<!-- NAVBAR -->
+
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="assets/logo.webp" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="assets/logo.webp" alt="logo-menu"></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="https://arcadafe.ong.br/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Quem Somos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#equipe">Nossa Equipe</a></li>
+                <li><a class="dropdown-item" href="#">Nossa História</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Seja um Voluntário</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="modo-noturno">
+            <label class="form-check-label" for="modo-noturno">Modo Noturno</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="banners banner-1 d-flex flex-column justify-content-center text-center">
+    <div class="banners-titulo bg-body-secondary py-5">
+      <h2 class="fw-bold">Protegendo e Cuidando dos Animais</h2>
+      <p class="fs-5 fw-bold">"Na Arca da Fé, nossa missão é garantir o bem-estar e a proteção dos animais. Trabalhamos incansavelmente para resgatar, reabilitar e encontrar lares amorosos para os animais em situação de abandono e maus-tratos. Junte-se a nós nessa causa e faça parte da mudança que queremos ver no mundo animal."</p>
+    </div>
+
+  </section>
+
+<!--APRESENTAÇÃO-->
+
+  <section class="py-5">
+    <h4 class="text-center fw-bold pb-1">Organização não governamental (ONG) - CNPJ: 24.285.635/0001-40</h4>
+  
+    <div class="container d-flex justify-content-around flex-wrap">
+  
+      <div class="card m-4" style="width: 20rem;">
+        <img src="assets/abrigo card.jpg" class="card-img-top" alt="Abrigo">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">O Abrigo</h5>
+          <p class="card-text">"Nosso abrigo de animais é um refúgio seguro para aqueles que precisam de amor e cuidado. Somos uma ONG dedicada a resgatar e reabilitar animais em situação de risco, proporcionando-lhes uma segunda chance de uma vida feliz."
+          </p>
+          <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas" data-bs-target="#canvas-1" aria-controls="offcanvasRight">Quero detalhes</a>  <!--Usar o data-bs-toogle em diante para vincular o offcanvas-->
+        </div>
+      </div>
+  
+      <div class="card m-4" style="width: 20rem;">
+        <img src="assets/doação.jpg" class="card-img-top" alt="Adoção">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Doações</h5>
+          <p class="card-text">A doação para uma ONG é um gesto de generosidade que pode transformar vidas. Ao contribuir financeiramente ou com seu tempo, você fortalece projetos sociais e causa um impacto positivo na sociedade.</p><br>
+          <a href="#" class="btn botao-padrao w-100 fw-bold mt-3" data-bs-toggle="offcanvas" data-bs-target="#canvas-2" aria-controls="offcanvasRight">Quero detalhes</a><!--Usar o data-bs-toogle em diante para vincular o offcanvas-->
+        </div>
+      </div>
+  
+      <div class="card m-4" style="width: 20rem;">
+        <img src="assets/adoção.jpg" class="card-img-top"
+          alt="Adoção">
+        <div class="card-body">
+          <h5 class="card-title py-2 fw-bold">Adoção</h5>
+          <p class="card-text">Ao adotar um animal da ONG, você não só está dando a ele um lar seguro e amoroso, mas também está ajudando a reduzir o número de animais abandonados e contribuindo para o bem-estar animal. Faça a diferença.</p><br>
+          <a href="#" class="btn botao-padrao w-100 fw-bold"  data-bs-toggle="offcanvas" data-bs-target="#canvas-3" aria-controls="offcanvasRight">Quero detalhes</a><!--Usar o data-bs-toogle em diante para vincular o offcanvas-->
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+  <section class="banners banner-2 d-flex flex-column justify-content-center text-center">
+    <div class="banners-titulo bg-body-secondary py-5">
+      <h2 class="fw-bold">Venha fazer parte da nossa história!</h2>
+      <p class="fs-5 fw-bold">"Você é apaixonado por animais e gostaria de fazer a diferença na vida dos animais de rua? Junte-se a nós como voluntário em nossa ONG! Estamos em busca de pessoas dedicadas e comprometidas que queiram ajudar a cuidar e proteger os animais abandonados de nossa comunidade."</p>
+    </div>
+  </section>
+
+
+
+
+  <section class="py-5">
+
+    <h2 class="fw-bold text-center pb-1 equipe py-5 equipe">Nossa Equipe</h2>
+
+    <div class="container py-5">
+      <div class="row mx-0">
+          <div class="col-12 col-md-6 col-lg-6 col-xl-4 efeito-especial1">
+              <div class="card border-0 mx-auto"
+                  style="width: 20rem;">
+                  <img src="assets/vanessa2.jpg" class="card-img-top" id="equipe" alt="vanesa-araujo">
+                  <div class="card-body">
+                      <h3 class="card-text text-center fw-bold">Vanessa Araujo</h3>
+                      <p>Olá a todos! Sou Vanessa Araujo, presidente da ONG Arca da Fé - Resgate Animal. Nossa história é marcada por desafios que moldaram nossa determinação e compromisso. Desde o início, enfrentamos obstáculos, mas com a força da nossa missão, superamos cada dificuldade. O caminho até aqui foi árduo, mas a paixão pela proteção dos animais nos impulsionou. Cada desafio nos fortaleceu, e hoje, com uma equipe dedicada, estamos prontos para continuar fazendo a diferença. Junte-se a nós nessa jornada de resiliência, compaixão e esperança. #ArcaDaFé #ResgateAnimal 🐾💪</p>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-6 col-xl-4 efeito-especial2">
+            <div class="card border-0 mx-auto"
+                style="width: 20rem;">
+                <img src="assets/julio.jpg" class="card-img-top" id="equipe" alt="Julio cesar">
+                <div class="card-body">
+                    <h3 class="card-text text-center fw-bold">Vereador Julio Cesar</h3>
+                    <p>Sou Júlio, vereador e voluntário apaixonado pela causa do resgate animal na ONG Arca da Fé. Unimos esforços para proteger, cuidar e proporcionar um lar amoroso a animais em situações delicadas. Como defensor dessas criaturas incríveis, convido você a se juntar a nós nessa jornada de compaixão e solidariedade. Juntos, podemos fazer a diferença! #ArcaDaFé #ResgateAnimal 🐾🌟</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4 efeito-especial3">
+          <div class="card border-0 mx-auto"
+              style="width: 20rem;">
+              <img src="assets/paulo.jpg" class="card-img-top" id="equipe" alt="Paulo">
+              <div class="card-body">
+                  <h3 class="card-text text-center fw-bold">Paulo Carneiro</h3>
+                  <p>Sou Paulo Carneiro, voluntário e responsável pelas edições de vídeo na ONG Arca da Fé - Resgate de Animais. Nosso compromisso é com a vida, dedicando esforços para resgatar, cuidar e oferecer uma segunda chance a animais em situações vulneráveis. Através da magia das imagens, buscamos sensibilizar corações e unir forças para garantir um futuro mais digno a esses seres especiais. Junte-se a nós nessa missão de amor e compaixão. #ArcaDaFé #ResgateDeAnimais 🐾💙</p>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6 col-xl-4 efeito-especial4">
+        <div class="card border-0 mx-auto"
+            style="width: 20rem;">
+            <img src="assets/andrielly.jpg" class="card-img-top" id="equipe" alt="Andrielly">
+            <div class="card-body">
+                <h3 class="card-text text-center fw-bold">Endrielly Fernanda</h3>
+                <p>Sou Endrielly Fernanda, orgulhosamente parte da equipe da ONG Arca da Fé - Resgate Animal. Nosso compromisso é com a vida e o bem-estar dos animais em situações de vulnerabilidade. Juntos, trabalhamos incansavelmente para oferecer cuidado, amor e uma segunda chance a esses seres especiais. Convido todos a se unirem a nós nessa nobre causa, promovendo juntos um futuro mais digno para nossos amigos de quatro patas. #ArcaDaFé #ResgateAnimal 🐾💙</p>
+            </div>
+        </div>
+        </div>
+      
+        <div class="col-12 col-md-6 col-lg-6 col-xl-4  efeito-especial5">
+      <div class="card border-0 mx-auto"
+          style="width: 20rem;">
+          <img src="assets/pedro 2.jpg" class="card-img-top" id="equipe" alt="Pedro marcelino">
+          <div class="card-body">
+              <h3 class="card-text text-center fw-bold">Pedro Marcelino</h3>
+              <p>Sou Pedro Marcelino, tesoureiro dedicado da ONG Arca da Fé - Resgate Animal. Nosso trabalho é mais do que uma missão; é um compromisso de amor e cuidado pelos animais em situações vulneráveis. Cada contribuição financeira que recebemos é uma gota que se transforma em oceano de esperança. Ao lado de uma equipe comprometida, buscamos garantir um futuro melhor para aqueles que não têm voz. Junte-se a nós nessa jornada de solidariedade e compaixão. #ArcaDaFé #ResgateAnimal 🐾💚</p>
+          </div>
+      </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6 col-xl-4 efeito-especial6">
+        <div class="card border-0 mx-auto" 
+        style="width: 20rem;">
+        <img src="assets/fernando.jpg" class="card-img-top" id="equipe" alt="Fernando">
+        <div class="card-body">
+            <h3 class="card-text text-center fw-bold">Luiz Fernando</h3>
+            <p>Sou Luiz Fernando, estudante de Zootecnia e voluntário na ONG Arca da Fé Resgate Animal. Minha paixão por cuidar dos animais vai além das salas de aula. Na Arca da Fé, trabalhamos incansavelmente para resgatar e oferecer uma nova chance a animais em situações difíceis. Junte-se a nós nessa missão de amor e compaixão pelos nossos amigos de quatro patas. 🐾🙏</p>
+        </div>
+        </div>
+      </div>
+    
+      <div class="d-grid gap-2 col-6 mx-auto py-5" >
+        <button class="btn botao-padrao fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#modal-">Veja Mais</button> <!--botão ativar-->
+       
+      </div>
+      </div>
+    </div>
+    
+
+  </section>
+
+<!--Carrocel-->
+  <section class="carrocel-1 col-12 col-md col-lg">
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item bg-img-1 active">
+          <img src="assets/abrigo.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item bg-img-2">
+          <img src="assets/equipe brumadinho.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item bg-img-2">
+          <img src="assets/povo1.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="py-4 container">
+    <div class="border border-2 rounded p-3">
+      <h3 class="fw-bold p-3 text-center">Entre em Contato</h3>
+      <form id="contato" action="https://formsubmit.co/27d002cd4e8da075e480040bb0bb2a69" method="POST">
+        <div class="form-floating mb-3">
+          <input type="email" name="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+          <label for="floatingEmail">Email</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="text" name="message" class="form-control" id="floatingEmail" placeholder="name@example.com">
+          <label for="floatingEmail">Menssagem</label>
+        </div>
+        <input type="hidden" name="_next" value="https://arcadafe.ong.br/thanks.html">
+      
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Deseja receber novidades por email?
+          </label>
+          <button type="submit" class="btn botao-padrao d-block fw-bold w-100 p-3 mt-3 py-3">Enviar</button> <!--Ajustes de espaçamentos debtro do botão-->
+      </form>
+      
+
+    </div>
+  </section>
+
+
+  <footer class="text-center">
+    <section class="container p-4 ob-0">
+      <div class="footer-bt p-3">
+        <a href="https://web.facebook.com/ongarcadafe?locale=pt_BR" target="_blank"><i class="bi bi-facebook btn"></i></a>
+        <a href="https://www.instagram.com/ong.arca.da.fe/" target="_blank"><i class="bi bi-instagram btn"></i></a>
+        <a href="https://twitter.com/arcaong" target="_blank"><i class="bi bi-twitter btn"></i></a>
+      </div>
+      <div>
+        2024 <i class="bi bi-c-circle fw-bold"> Desenvolvido por Eric Campos</i>
+      </div>
+
+      <div class="whats">
+        <a href="https://wa.me/5514998898178" target="_blank"><img src="assets/WhatsApp-Logo-650x366.png" title="Entre em contato!" alt="whatsapp"></a>
+      </div>
+    </section>
+  </footer>
+
+</main>
+
+<!--canvas  1-->
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-1" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">O Abrigo</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Primeiros Passos
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <img src="assets/Abandono-de-animais.jpg" class="card-img-top" alt="Primeiros passos">
+          <div class="accordion-body">A ONG Arca da Fé Resgate Animal desempenha um papel crucial na proteção e no cuidado desses seres indefesos. Nossas atividades são diversas e abrangem desde o resgate inicial até a reabilitação e busca por adoção responsável. O primeiro passo é identificar e responder a situações de emergência, como animais abandonados, vítimas de maus-tratos, feridos ou doentes. A equipe da ONG atua prontamente para resgatar esses animais, fornecendo-lhes abrigo seguro e cuidados veterinários imediatos. Após o resgate, inicia-se o processo de reabilitação, que envolve tratamentos médicos, alimentação adequada, socialização e treinamento comportamental, quando necessário...</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            A Equipe
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <img src="assets/equipe.jpg" class="card-img-top" alt="foto-julio">
+          <div class="accordion-body"> A ONG trabalha em conjunto com veterinários, outros profissionais para garantir que cada animal receba o cuidado adequado e tenha a oportunidade de se recuperar física e emocionalmente. Além disso, a ONG promove campanhas de conscientização sobre a importância da guarda responsável, esterilização e castração, prevenção de doenças, vacinação e cuidados básicos com os animais. Essas ações visam educar a comunidade e reduzir o número de animais em situação de vulnerabilidade. Também se dedica à busca por lares amorosos e permanentes para os animais resgatados.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Controle
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <img src="assets/castramovel.jpg" class="card-img-top" alt="castramovel">
+          <div class="accordion-body">Além disso, a ONG também atua em programas de castração gratuita ou a baixo custo, para ajudar a controlar a população de animais de rua e prevenir o abandono. Essas são apenas algumas das atividades desempenhadas pela ONG. Nosso trabalho é essencial para proteger e melhorar a vida desses animais, além de promover uma mudança positiva na sociedade em relação à compaixão e ao respeito pelos animais.</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- Canvas 2 -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">O Abrigo</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Vanessa Araujo
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <img src="assets/vanessa2.jpg" class="card-img-top" alt="foto-vanessa">
+          <div class="accordion-body">Tenho a honra de ser a presidente da Ong Arca da Fé, uma organização dedicada a ajudar animais em situação de vulnerabilidade. Desde que me envolvi com a causa animal, tenho testemunhado histórias de sofrimento e abandono que me motivaram a fundar essa ONG. Nosso principal objetivo é resgatar, cuidar e encontrar lares amorosos para os animais que foram vítimas de maus-tratos, abandono ou que se encontram em situação de risco. Acreditamos que todos os seres vivos merecem amor, cuidado e respeito, e trabalhamos incansavelmente para garantir que os animais tenham uma segunda chance na vida. Além do resgate e reabilitação, também nos dedicamos a promover a conscientização sobre a importância da adoção responsável, da esterilização e de práticas humanas de cuidado com os animais. Realizamos campanhas educativas, eventos de adoção e parcerias com clínicas veterinárias e profissionais para garantir que os animais recebam o tratamento adequado. Nossa ONG é composta por uma equipe apaixonada e comprometida, formada por voluntários, veterinários, tratadores e outros profissionais que trabalham em conjunto para proporcionar o melhor cuidado possível aos animais sob nossa responsabilidade. Contamos com o apoio da comunidade, de doadores e de parceiros para continuar nosso trabalho em prol dos animais em situação de vulnerabilidade. Juntos, podemos fazer a diferença na vida desses seres indefesos e construir um futuro mais humano e compassivo. Se você também acredita no poder da compaixão e deseja se envolver nessa causa nobre, convido você a fazer parte da família Arca da Fé. Juntos, podemos mudar vidas e dar esperança aos animais que tanto precisam. Agradeço a todos que nos apoiam e que compartilham dessa visão de um mundo melhor para os animais..</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Julio Cesar
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <img src="assets/julio.jpg" class="card-img-top" alt="foto-julio">
+          <div class="accordion-body">Como vereador, meu compromisso é lutar pelos direitos e bem-estar dos animais em nossa comunidade. Acredito firmemente que a proteção animal é uma responsabilidade de todos nós, e é por isso que busco implementar políticas e medidas que promovam o respeito e cuidado com os animais em nossa cidade. Minha visão é construir uma sociedade onde os animais sejam tratados com compaixão e dignidade. Quero garantir que tenhamos leis eficazes de proteção animal, abrigos adequados, programas de adoção responsável e ações de conscientização sobre a importância do respeito aos animais. Além disso, defendo a implementação de políticas públicas que combatam o abandono e maus-tratos aos animais, bem como o incentivo à castração e cuidados veterinários acessíveis a todos. Estou pronto para ouvir as necessidades da nossa comunidade, trabalhar em parceria com organizações e defensores dos animais, e buscar soluções que promovam um ambiente seguro e acolhedor para nossos amigos de quatro patas. Conto com o apoio de todos vocês nessa jornada em prol da causa animal. Juntos, podemos fazer a diferença e criar um futuro melhor para os animais em nossa cidade.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Endrielly Castilho
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <img src="assets/andrielly.jpg" class="card-img-top alt="foto-andriely">
+          <div class="accordion-body">Estou profundamente comprometida em contribuir para a melhoria das vidas dos nossos amigos de quatro patas. Como voluntária, dedico meu tempo e esforço para ajudar os animais em situação de vulnerabilidade. Seja cuidando deles no abrigo, promovendo campanhas de adoção responsável ou participando de resgates, estou sempre empenhada em garantir o bem-estar e a felicidade desses seres tão especiais. Acredito que cada animal merece amor, cuidado e uma segunda chance. Meu objetivo é proporcionar a eles um ambiente seguro, carinho e a oportunidade de encontrar um lar amoroso. Trabalho em parceria com uma equipe dedicada e apaixonada, compartilhando conhecimentos e experiências para garantir o melhor cuidado possível. Ser voluntário em uma ONG de animais é uma experiência gratificante e enriquecedora. A cada dia, aprendo mais sobre a importância da compaixão, empatia e respeito pelos animais. E, acima de tudo, tenho a oportunidade de fazer a diferença na vida dessas criaturas incríveis. Convido a todos a se juntarem a nós nessa missão de proteger e cuidar dos animais. Seja através de doações, adoção responsável, participação em eventos ou até mesmo compartilhando informações sobre a importância da proteção animal, cada pequeno gesto faz uma grande diferença. Agradeço a todos que apoiam e valorizam o trabalho das ONGs de animais. Juntos, podemos criar um mundo melhor para essas preciosidades peludas.</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<!--canvas  3-->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="canvas-" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">O Abrigo</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Vanessa Araujo
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <img src="assets/vanessa2.jpg" class="card-img-top" alt="foto-vanessa">
+          <div class="accordion-body">Tenho a honra de ser a presidente da Ong Arca da Fé, uma organização dedicada a ajudar animais em situação de vulnerabilidade. Desde que me envolvi com a causa animal, tenho testemunhado histórias de sofrimento e abandono que me motivaram a fundar essa ONG. Nosso principal objetivo é resgatar, cuidar e encontrar lares amorosos para os animais que foram vítimas de maus-tratos, abandono ou que se encontram em situação de risco. Acreditamos que todos os seres vivos merecem amor, cuidado e respeito, e trabalhamos incansavelmente para garantir que os animais tenham uma segunda chance na vida. Além do resgate e reabilitação, também nos dedicamos a promover a conscientização sobre a importância da adoção responsável, da esterilização e de práticas humanas de cuidado com os animais. Realizamos campanhas educativas, eventos de adoção e parcerias com clínicas veterinárias e profissionais para garantir que os animais recebam o tratamento adequado. Nossa ONG é composta por uma equipe apaixonada e comprometida, formada por voluntários, veterinários, tratadores e outros profissionais que trabalham em conjunto para proporcionar o melhor cuidado possível aos animais sob nossa responsabilidade. Contamos com o apoio da comunidade, de doadores e de parceiros para continuar nosso trabalho em prol dos animais em situação de vulnerabilidade. Juntos, podemos fazer a diferença na vida desses seres indefesos e construir um futuro mais humano e compassivo. Se você também acredita no poder da compaixão e deseja se envolver nessa causa nobre, convido você a fazer parte da família Arca da Fé. Juntos, podemos mudar vidas e dar esperança aos animais que tanto precisam. Agradeço a todos que nos apoiam e que compartilham dessa visão de um mundo melhor para os animais..</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Julio Cesar
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <img src="assets/julio.jpg" class="card-img-top" alt="foto-julio">
+          <div class="accordion-body">Como vereador, meu compromisso é lutar pelos direitos e bem-estar dos animais em nossa comunidade. Acredito firmemente que a proteção animal é uma responsabilidade de todos nós, e é por isso que busco implementar políticas e medidas que promovam o respeito e cuidado com os animais em nossa cidade. Minha visão é construir uma sociedade onde os animais sejam tratados com compaixão e dignidade. Quero garantir que tenhamos leis eficazes de proteção animal, abrigos adequados, programas de adoção responsável e ações de conscientização sobre a importância do respeito aos animais. Além disso, defendo a implementação de políticas públicas que combatam o abandono e maus-tratos aos animais, bem como o incentivo à castração e cuidados veterinários acessíveis a todos. Estou pronto para ouvir as necessidades da nossa comunidade, trabalhar em parceria com organizações e defensores dos animais, e buscar soluções que promovam um ambiente seguro e acolhedor para nossos amigos de quatro patas. Conto com o apoio de todos vocês nessa jornada em prol da causa animal. Juntos, podemos fazer a diferença e criar um futuro melhor para os animais em nossa cidade.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed botao-padrao" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Endrielly Castilho
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <img src="assets/andrielly.jpg" class="card-img-top alt="foto-andriely">
+          <div class="accordion-body">Estou profundamente comprometida em contribuir para a melhoria das vidas dos nossos amigos de quatro patas. Como voluntária, dedico meu tempo e esforço para ajudar os animais em situação de vulnerabilidade. Seja cuidando deles no abrigo, promovendo campanhas de adoção responsável ou participando de resgates, estou sempre empenhada em garantir o bem-estar e a felicidade desses seres tão especiais. Acredito que cada animal merece amor, cuidado e uma segunda chance. Meu objetivo é proporcionar a eles um ambiente seguro, carinho e a oportunidade de encontrar um lar amoroso. Trabalho em parceria com uma equipe dedicada e apaixonada, compartilhando conhecimentos e experiências para garantir o melhor cuidado possível. Ser voluntário em uma ONG de animais é uma experiência gratificante e enriquecedora. A cada dia, aprendo mais sobre a importância da compaixão, empatia e respeito pelos animais. E, acima de tudo, tenho a oportunidade de fazer a diferença na vida dessas criaturas incríveis. Convido a todos a se juntarem a nós nessa missão de proteger e cuidar dos animais. Seja através de doações, adoção responsável, participação em eventos ou até mesmo compartilhando informações sobre a importância da proteção animal, cada pequeno gesto faz uma grande diferença. Agradeço a todos que apoiam e valorizam o trabalho das ONGs de animais. Juntos, podemos criar um mundo melhor para essas preciosidades peludas.</div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Nossa Equipe</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+        <div class="container py-5">
+          <div class="row mx-0">
+              <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card border-0 mx-auto"
+                      style="width: 20rem;">
+                      <img src="assets/vanessa2.jpg" class="card-img-top" id="equipe" alt="vanesa-araujo">
+                      <div class="card-body">
+                          <h3 class="card-text text-center fw-bold">Vanessa Araujo</h3>
+                          <p>Olá a todos! Sou Vanessa Araujo, presidente da ONG Arca da Fé - Resgate Animal. Nossa história é marcada por desafios que moldaram nossa determinação e compromisso. Desde o início, enfrentamos obstáculos, mas com a força da nossa missão, superamos cada dificuldade. O caminho até aqui foi árduo, mas a paixão pela proteção dos animais nos impulsionou. Cada desafio nos fortaleceu, e hoje, com uma equipe dedicada, estamos prontos para continuar fazendo a diferença. Junte-se a nós nessa jornada de resiliência, compaixão e esperança. #ArcaDaFé #ResgateAnimal 🐾💪</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-0 mx-auto"
+                    style="width: 20rem;">
+                    <img src="assets/julio.jpg" class="card-img-top" id="equipe" alt="julio-cesar.">
+                    <div class="card-body">
+                        <h3 class="card-text text-center fw-bold">Vereador Julio Cesar</h3>
+                        <p>Sou Júlio, vereador e voluntário apaixonado pela causa do resgate animal na ONG Arca da Fé. Unimos esforços para proteger, cuidar e proporcionar um lar amoroso a animais em situações delicadas. Como defensor dessas criaturas incríveis, convido você a se juntar a nós nessa jornada de compaixão e solidariedade. Juntos, podemos fazer a diferença! #ArcaDaFé #ResgateAnimal 🐾🌟</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card border-0 mx-auto"
+                  style="width: 20rem;">
+                  <img src="assets/paulo.jpg" class="card-img-top" id="equipe" alt="Paulo">
+                  <div class="card-body">
+                      <h3 class="card-text text-center fw-bold">Paulo Carneiro</h3>
+                      <p>Sou Paulo Carneiro, voluntário e responsável pelas edições de vídeo na ONG Arca da Fé - Resgate de Animais. Nosso compromisso é com a vida, dedicando esforços para resgatar, cuidar e oferecer uma segunda chance a animais em situações vulneráveis. Através da magia das imagens, buscamos sensibilizar corações e unir forças para garantir um futuro mais digno a esses seres especiais. Junte-se a nós nessa missão de amor e compaixão. #ArcaDaFé #ResgateDeAnimais 🐾💙</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0 mx-auto"
+                style="width: 20rem;">
+                <img src="assets/andrielly.jpg" class="card-img-top" id="equipe" alt="Café preto.">
+                <div class="card-body">
+                    <h3 class="card-text text-center fw-bold">Endrielly Fernanda</h3>
+                    <p>Sou Endrielly Fernanda, orgulhosamente parte da equipe da ONG Arca da Fé - Resgate Animal. Nosso compromisso é com a vida e o bem-estar dos animais em situações de vulnerabilidade. Juntos, trabalhamos incansavelmente para oferecer cuidado, amor e uma segunda chance a esses seres especiais. Convido todos a se unirem a nós nessa nobre causa, promovendo juntos um futuro mais digno para nossos amigos de quatro patas. #ArcaDaFé #ResgateAnimal 🐾💙</p>
+                </div>
+            </div>
+            </div>
+          
+            <div class="col-12 col-md-6 col-lg-4">
+          <div class="card border-0 mx-auto"
+              style="width: 20rem;">
+              <img src="assets/pedro 2.jpg" class="card-img-top" id="equipe" alt="Café preto.">
+              <div class="card-body">
+                  <h3 class="card-text text-center fw-bold">Pedro Marcelino</h3>
+                  <p>Sou Pedro Marcelino, tesoureiro dedicado da ONG Arca da Fé - Resgate Animal. Nosso trabalho é mais do que uma missão; é um compromisso de amor e cuidado pelos animais em situações vulneráveis. Cada contribuição financeira que recebemos é uma gota que se transforma em oceano de esperança. Ao lado de uma equipe comprometida, buscamos garantir um futuro melhor para aqueles que não têm voz. Junte-se a nós nessa jornada de solidariedade e compaixão. #ArcaDaFé #ResgateAnimal 🐾💚</p>
+              </div>
+          </div>
+          </div>
+          
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card border-0 mx-auto" 
+            style="width: 20rem;">
+            <img src="assets/vanessa2.jpg" class="card-img-top" id="equipe" alt="Café preto.">
+            <div class="card-body">
+                <h3 class="card-text text-center fw-bold">Vanessa Araujo</h3>
+                <p>Tenho a honra de ser a presidente da Ong Arca da Fé, uma organização dedicada a ajudar animais em situação de vulnerabilidade. Desde que me envolvi com a causa animal, tenho testemunhado histórias de sofrimento e abandono que me motivaram a fundar essa ONG...</p>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+
+
+      <!--Botão Close-->
+      <div class="modal-footer">
+        <button type="button" class="btn botao-padrao" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!--link para bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+    <script src="revel.js" defer></script>
+    
+<!--Biblioteca ScrollReveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>

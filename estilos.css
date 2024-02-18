@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Jost:wght@700&family=Kodchasan:wght@200&family=Nunito+Sans:opsz,wght@6..12,200&family=Nunito:wght@800&family=Quicksand:wght@300&family=Roboto:ital,wght@0,300;0,700;1,300;1,500&family=Rubik+Doodle+Shadow&display=swap');
+
+body {
+  --bege: #f6eef5;
+  --marrom-escuro: #816D4F;
+  --marrom-claro: #B29463;
+  font-family: 'Barlow', sans-serif;
+}
+
+
+
+input[type=checkbox] {
+  border: 2px solid;
+  box-shadow: none;
+}
+
+input[type=checkbox]:checked,
+input[type="checkbox"]:focus {
+  border-color: rgba(255, 0, 0, 0.295);
+  box-shadow: none;
+  outline: none;
+  
+}
+
+.form-check-label{
+  padding-left: 5px;
+}
+
+
+.navbar{
+  padding: 0px;
+}
+.navbar-brand > img{
+  width: 100px;
+
+}
+
+
+.offcanvas-title > img{
+  width: 80px;
+}
+
+.navbar-brand{
+  position: relative;
+  top: 30px;
+}
+
+.form-switch{
+  display: flex;
+  align-items: center;
+}
+
+.banner-1{
+  background-image: url(assets/pexels-photo-3628100.jpeg);
+     
+
+}
+
+.banner-2{
+  background-image: url(assets/voluntarios.jpg);
+}
+
+.banner-3{
+  background-image: url(assets/cachorros-pixel.jpeg);
+}
+
+.banners{
+  background-attachment:fixed ;
+  width: 100%;
+  height:800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banners-titulo{
+  --bs-bg-opacity:.7;
+}
+
+.equipe{
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 80px;
+}
+
+.card-img-top{
+  height: 250px
+}
+
+.botao-padrao{
+  color: white;
+  background-color: #953133;
+}
+
+.botao-padrao:hover {
+  background-color: #252a43;
+  color: white;
+  }
+
+
+  .carrocel-1{
+    background-image: url(assets/vermelho-fundo\ 2.webp);
+    background-size: cover;
+    width: 100%;
+   
+    }
+.carousel-item > img{
+  width: 100%;
+  height: 25vw;
+}
+
+#carouselExampleFade{
+  max-width: 1400px;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+
+}
+
+.croucel-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Voluntarios*/
+#equipe{
+  border-radius: 40%;
+
+}
+
+
+/*Caroucel*/
+
+.carousel-control-next-icon{
+  width: 30%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+
+.carousel-control-prev-icon{
+  width: 30%;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.575);
+}
+
+
+/*footer*/
+
+footer{
+  background-color: #95313381;
+}
+
+/*utilizar para estilizar o modo noturno*/
+[data-bs-theme="dark"] {
+  color: white;
+  .nav-link, .card-body .offcanvas, .accordion, .btn, .btn:hover, text-black{
+    --bs-nav-link-color: white;
+    --bs-card-color: white;
+    --bs-body-color: white;
+    --bs-btn-hover-border-color:#252a43;
+    
+  }
+}
+
+
+.p-3 i{
+  font-size: 25px;
+}
+
+.btn:hover{
+  color:#ffffff
+}
+
+.efeito-especial1, .efeito-especial2, .efeito-especial3, .efeito-especial4, .efeito-especial5, .efeito-especial6{
+  visibility: hidden;
+}
+
+.whats{
+  width: 100%;
+}
+
+.whats a > img{
+  width:100px;
+  position: fixed;
+  z-index: 9999;
+  bottom: 1%;
+  left: 90%;
+  transform: translate(0px);
+  animation: float 5s ease-in-out infinite;
+  cursor: pointer;
+}
+
+/*Movimentação de Imagem*/
+
+@keyframes float {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-30px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+

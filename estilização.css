@@ -1,0 +1,16 @@
+@media(max-width: 667px){
+    .whats > a > img{
+        position: fixed;
+        left: 270px;
+        width: 90px;
+    }
+}
+
+
+@media(max-width: 320px){
+    .whats > a > img{
+        position: fixed;
+        left: 220px;
+        width: 80px;
+    }
+}
